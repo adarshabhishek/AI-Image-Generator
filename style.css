@@ -353,3 +353,88 @@ body.dark-theme .container{
     text-align: center;
     color: var(--color-placeholder);
 }
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .header .logo-wrapper {
+    gap: 10px;
+  }
+
+  .header .logo-wrapper .logo {
+    height: 45px;
+    width: 45px;
+    font-size: 1.1rem;
+  }
+
+  .header .logo-wrapper h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .header .theme-toggle {
+    height: 38px;
+    width: 38px;
+    font-size: 0.9rem;
+  }
+
+  .main-content .prompt-container {
+    margin-bottom: 15px;
+  }
+
+  .prompt-container .prompt-input {
+    min-height: 100px;
+    font-size: 1rem;
+    padding: 14px 16px;
+  }
+
+  .prompt-container .prompt-btn {
+    right: 10px;
+    bottom: 10px;
+    height: 30px;
+    width: 30px;
+    font-size: 0.65rem;
+  }
+
+  .main-content .prompt-actions {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .prompt-actions .select-wrapper::after {
+    right: 15px;
+  }
+
+  .prompt-actions :where(.custom-select, .generate-btn) {
+    padding: 10px 15px;
+    font-size: 0.95rem;
+  }
+
+  .prompt-actions .generate-btn {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .main-content .gallery-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px;
+  }
+
+  .gallery-grid .img-card {
+    aspect-ratio: 1;
+  }
+}
