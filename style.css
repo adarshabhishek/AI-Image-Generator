@@ -224,6 +224,11 @@ body.dark-theme .container{
     color: #fff;
     background: var(--color-gradient);
 }
+
+.prompt-actions .generate-btn:disabled{
+    opacity: 0.6;
+    pointer-events: none;
+}
  .prompt-actions .generate-btn:hover{
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(109 40 217 0.3);
@@ -289,6 +294,9 @@ body.dark-theme .container{
     height: 45px;
     width: 45px;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     backdrop-filter: blur(5px);
     border-radius: 50%;
     border: none;
@@ -331,7 +339,7 @@ body.dark-theme .container{
     border-radius: 50%;
     border: 3px solid var(--color-border);
     border-top-color: var(--color-primary) ;
-    /* animation: spin 1s linear infinite; */
+    animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
